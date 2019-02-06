@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="84f9469e-1e52-463a-8a02-8a4400de2734" data-root-id="4476"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4719">
+          {"cb76a2c8-7d31-424f-95a8-35fe706864eb":{"roots":{"references":[{"attributes":{"below":[{"id":"4486","type":"CategoricalAxis"}],"left":[{"id":"4490","type":"LinearAxis"}],"plot_height":500,"plot_width":500,"renderers":[{"id":"4486","type":"CategoricalAxis"},{"id":"4489","type":"Grid"},{"id":"4490","type":"LinearAxis"},{"id":"4494","type":"Grid"},{"id":"4499","type":"GlyphRenderer"}],"title":{"id":"4475","type":"Title"},"toolbar":{"id":"4495","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"4478","type":"FactorRange"},"x_scale":{"id":"4482","type":"CategoricalScale"},"y_range":{"id":"4480","type":"DataRange1d"},"y_scale":{"id":"4484","type":"LinearScale"}},"id":"4476","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"4616","type":"BasicTickFormatter"},"plot":{"id":"4476","subtype":"Figure","type":"Plot"},"ticker":{"id":"4491","type":"BasicTicker"}},"id":"4490","type":"LinearAxis"},{"attributes":{"fill_color":{"field":"fill_color"},"line_color":{"field":"line_color"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"4497","type":"VBar"},{"attributes":{"formatter":{"id":"4617","type":"CategoricalTickFormatter"},"plot":{"id":"4476","subtype":"Figure","type":"Plot"},"ticker":{"id":"4487","type":"CategoricalTicker"}},"id":"4486","type":"CategoricalAxis"},{"attributes":{},"id":"4620","type":"UnionRenderers"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"4495","type":"Toolbar"},{"attributes":{},"id":"4619","type":"Selection"},{"attributes":{},"id":"4616","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"4476","subtype":"Figure","type":"Plot"},"ticker":{"id":"4491","type":"BasicTicker"}},"id":"4494","type":"Grid"},{"attributes":{"callback":null,"data":{"fill_color":["#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08"],"line_color":["#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08","#FFFF00","#FF8000","#FFFF00","#FF8000","#0000FF","#298A08"],"top":[37,10,21,9,15,16,78,132,383,23,17,141,91,7,10,23,7,167,9,53,45,11,4],"x":["Azuay","Bolivar","Carchi","Ca\u00f1ar","Chimborazo","Cotopaxi","El Oro","Esmeraldas","Guayas","Imbabura","Loja","Los_Rios","Manabi","Morona_Santiago","Napo","Orellana","Pastaza","Pichincha","Santa_Elena","Santo_Domingo_De_Los_Tsachilas","Sucumbios","Tungurahua","Zamora_Chinchipe"]},"selected":{"id":"4619","type":"Selection"},"selection_policy":{"id":"4620","type":"UnionRenderers"}},"id":"4496","type":"ColumnDataSource"},{"attributes":{"callback":null,"start":0},"id":"4480","type":"DataRange1d"},{"attributes":{"source":{"id":"4496","type":"ColumnDataSource"}},"id":"4500","type":"CDSView"},{"attributes":{},"id":"4487","type":"CategoricalTicker"},{"attributes":{},"id":"4491","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.6},"x":{"field":"x"}},"id":"4498","type":"VBar"},{"attributes":{"data_source":{"id":"4496","type":"ColumnDataSource"},"glyph":{"id":"4497","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4498","type":"VBar"},"selection_glyph":null,"view":{"id":"4500","type":"CDSView"}},"id":"4499","type":"GlyphRenderer"},{"attributes":{},"id":"4617","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Cantidad Por Regiones"},"id":"4475","type":"Title"},{"attributes":{},"id":"4482","type":"CategoricalScale"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"4476","subtype":"Figure","type":"Plot"},"ticker":{"id":"4487","type":"CategoricalTicker"}},"id":"4489","type":"Grid"},{"attributes":{},"id":"4484","type":"LinearScale"},{"attributes":{"callback":null,"factors":["COSTA","SIERRA"]},"id":"4478","type":"FactorRange"}],"root_ids":["4476"]},"title":"Bokeh Application","version":"1.0.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4719').textContent;
+                  var render_items = [{"docid":"cb76a2c8-7d31-424f-95a8-35fe706864eb","roots":{"4476":"84f9469e-1e52-463a-8a02-8a4400de2734"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

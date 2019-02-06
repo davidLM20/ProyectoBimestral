@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="39f337fd-75df-480b-9837-75312a7f1a55" data-root-id="4347"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4596">
+          {"3c9b8cb0-1d1f-4541-a1a3-2135f6232502":{"roots":{"references":[{"attributes":{"below":[{"id":"4357","type":"CategoricalAxis"}],"left":[{"id":"4361","type":"LinearAxis"}],"plot_height":350,"plot_width":700,"renderers":[{"id":"4357","type":"CategoricalAxis"},{"id":"4360","type":"Grid"},{"id":"4361","type":"LinearAxis"},{"id":"4365","type":"Grid"},{"id":"4370","type":"GlyphRenderer"}],"title":{"id":"4346","type":"Title"},"toolbar":{"id":"4366","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"4349","type":"FactorRange"},"x_scale":{"id":"4353","type":"CategoricalScale"},"y_range":{"id":"4351","type":"DataRange1d"},"y_scale":{"id":"4355","type":"LinearScale"}},"id":"4347","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4355","type":"LinearScale"},{"attributes":{},"id":"4492","type":"CategoricalTickFormatter"},{"attributes":{"axis_label":"Numero de Muertes","formatter":{"id":"4494","type":"BasicTickFormatter"},"plot":{"id":"4347","subtype":"Figure","type":"Plot"},"ticker":{"id":"4362","type":"BasicTicker"}},"id":"4361","type":"LinearAxis"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"4347","subtype":"Figure","type":"Plot"},"ticker":{"id":"4358","type":"CategoricalTicker"}},"id":"4360","type":"Grid"},{"attributes":{"callback":null,"data":{"fill_color":["#FFD700","#FF1493","#DC143C","#8A2BE2"],"top":[840,32,407,30],"x":["Asesinatos","Femicidios","Homicidios","Sicariatos"]},"selected":{"id":"4497","type":"Selection"},"selection_policy":{"id":"4496","type":"UnionRenderers"}},"id":"4367","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"4369","type":"VBar"},{"attributes":{"callback":null,"start":0},"id":"4351","type":"DataRange1d"},{"attributes":{"axis_label":"Tipo de Muerte","formatter":{"id":"4492","type":"CategoricalTickFormatter"},"plot":{"id":"4347","subtype":"Figure","type":"Plot"},"ticker":{"id":"4358","type":"CategoricalTicker"}},"id":"4357","type":"CategoricalAxis"},{"attributes":{},"id":"4353","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"4347","subtype":"Figure","type":"Plot"},"ticker":{"id":"4362","type":"BasicTicker"}},"id":"4365","type":"Grid"},{"attributes":{},"id":"4494","type":"BasicTickFormatter"},{"attributes":{},"id":"4362","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Asesinatos","Femicidios","Homicidios","Sicariatos"]},"id":"4349","type":"FactorRange"},{"attributes":{"fill_color":{"field":"fill_color"},"line_color":{"value":"#000000"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"4368","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"4366","type":"Toolbar"},{"attributes":{"data_source":{"id":"4367","type":"ColumnDataSource"},"glyph":{"id":"4368","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4369","type":"VBar"},"selection_glyph":null,"view":{"id":"4371","type":"CDSView"}},"id":"4370","type":"GlyphRenderer"},{"attributes":{},"id":"4496","type":"UnionRenderers"},{"attributes":{},"id":"4497","type":"Selection"},{"attributes":{},"id":"4358","type":"CategoricalTicker"},{"attributes":{"source":{"id":"4367","type":"ColumnDataSource"}},"id":"4371","type":"CDSView"},{"attributes":{"plot":null,"text":"Numero de muerte por tipo"},"id":"4346","type":"Title"}],"root_ids":["4347"]},"title":"Bokeh Application","version":"1.0.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4596').textContent;
+                  var render_items = [{"docid":"3c9b8cb0-1d1f-4541-a1a3-2135f6232502","roots":{"4347":"39f337fd-75df-480b-9837-75312a7f1a55"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
